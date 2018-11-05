@@ -1,0 +1,81 @@
+.container{
+  margin-top: 20px;
+}
+
+.milk-header{
+  font-family: 'Pacifico', cursive;
+  color: green;
+}
+
+.milk-header img {
+  width: 100%;
+}
+
+.row {
+  margin: 0px;
+}
+
+.milk-users {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(207, 17, 17);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover{
+  cursor: pointer;
+}
+
+.dot:hover{
+  cursor: hand;
+}
+
+.users-column{
+  font-family: 'Courgette', cursive;
+  font-size: 18px;
+}
+
+.table td {
+  border-top: none !important;
+}
+
+#milk-table-container{
+  padding-top: 20px;
+  background-color: rgb(229, 233, 229);
+  border-radius: 20px;
+}
+
+.quantity-select div{
+  font-size: 24px;
+}
+
+#buy-milk-modal{
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+.confirm-buy-milk-container button{
+  font-size: 20px;
+}
+
+.open-buy-milk-modal-container{
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.open-buy-milk-modal-container button{
+  font-size: 20px;
+}
+
+.modal-content{
+  padding: 20px;
+}
+
+
+

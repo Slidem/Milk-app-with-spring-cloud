@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="{{milkAppUri}}/milk-app.css">
+    <script src="{{milkAppUri}}/milk-app.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!--header-->
+    <div class="milk-header row">
+        <div class="milk-header-text col-md-offset-3 col-md-5 text-center">
+            <h3>{{milkAppTeamName}} MILK</h3>
+        </div>
+        <div class="milk-header-icon col-md-2"><img src="{{milkAppUri}}/milk-and-coffee.jpg" class="img img-circle"
+                                                    alt="milk img">
+        </div>
+    </div>
+
+
+    <!-- buy milk button container-->
+    <div class="row open-buy-milk-modal-container text-center">
+        <div class="col-md-offset-4 col-md-4">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#buy-milk-modal"> Gimme some milk
+                <span class="glyphicon glyphicon-heart"></span></button>
+        </div>
+    </div>
+
+    <!-- users and purchases table; populated by js -->
+    <div class="milk-users text-center row">
+        <div id="milk-table-container" class="col-md-offset-1 col-md-9">
+        </div>
+    </div>
+
+    <!-- buy milk modal; populated by js -->
+    <div class="modal fade" id="buy-milk-modal" role="dialog">
+    </div>
+
+    <!-- success and failure modal; hidden and used for ajax calls-->
+    <div class="modal fade" id="success-modal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center">
+                Success <span class="glyphicon glyphicon-thumbs-up"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="failure-modal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center">
+                Failure <span class="glyphicon glyphicon-thumbs-down"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- generate tables and modals -->
+<script>
+    $(document).ready(function () {
+        init('{{milkAppUri}}');
+    });
+</script>
+</html>
