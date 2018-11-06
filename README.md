@@ -64,5 +64,11 @@ Note !!! The actuator endpoints must be enabled and exposed.
 ![alt text](admin_console.png)
 
 
+### End result:
+
+![alt text](milk-app.png)
+
+
+
 
  
